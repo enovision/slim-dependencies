@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dependencies xmlns="http://example.org/dependencies">
+    <schema>
+        <source>sample</source>
+        <targets>
+            <target>
+                <table>target_table</table>
+                <field>target_field</field>
+                <alias>Target Alias</alias>
+                <where>active = 1</where>
+            </target>
+            <target>
+                <table>target_table_2</table>
+                <field>target_field_2</field>
+                <alias>Target Alias 2</alias>
+                <where>active = 1</where>
+            </target>
+        </targets>
+    </schema>
+    <schema>
+        <source>sample_with_group</source>
+        <targets>
+            <target>
+                <table>target_table</table>
+                <field>target_field</field>
+                <group>source_group</group>
+                <alias>Alias for this table</alias>
+                <where>active = 1</where>
+            </target>
+            <target>
+                <table>target_table</table>
+                <field>target_field_2</field>
+                <group>source_group_2</group>
+                <alias>Look!!! same target table again, but another group and field</alias>
+                <where>active = 1</where>
+            </target>
+            <target>
+                <table>target_table_2</table>
+                <field>target_field_2</field>
+                <group>source_group_2</group>
+                <alias>Some Alias</alias>
+                <where>active = 1</where>
+            </target>
+        </targets>
+    </schema>
+</dependencies>

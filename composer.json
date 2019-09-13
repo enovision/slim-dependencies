@@ -1,0 +1,21 @@
+{
+  "name": "enovision/slim-dependencies",
+  "description": "Package that give you control over mysql table dependencies before removing anything from your database",
+  "type": "library",
+  "require": {
+    "sabre/xml": "^1.5"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Johan van de Merwe",
+      "email": "j.vd.merwe@enovision.net"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Enovision\\Slim\\Dependencies\\": "src/",
+      "Enovision\\Slim\\Dependencies\\Classes\\": "classes/"
+    }
+  }
+}
