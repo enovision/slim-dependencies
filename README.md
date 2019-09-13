@@ -1,8 +1,11 @@
-The `enovision-slim-dependencies` package (not public) is used to check if a record has dependencies in other tables. You check the dependencies in case you want to delete a record.
-After the check you can decided if you want to persuit the record deletion.
+## This package is about table dependencies in a MySQL Database, it has nothing to do with dependency injection !!!
+
+The `slim-dependencies` package (not in packagist) can be used to check if a record has dependencies in other tables. 
+You check the dependencies in case you want to delete a record.
+After the check you can decide if you want to persuit the record deletion.
 
 ### How it works
-All the dependencies are registered in an XML file named 'dependencies.xml'. A sample XML can be found in the package 'config' folder.
+All dependencies are registered in an XML file named 'dependencies.xml'. A sample XML can be found in the package 'config' folder.
 
 The structure is as following:
 ```
